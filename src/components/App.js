@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar'; 
-import youtube from '../apis/youtube';
+import youtube from '../apis/index';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 
@@ -10,7 +10,7 @@ class App extends React.Component {
     state = { videos: [], selectedVideo: null}; 
 
     componentDidMount() {
-        this.onTermSubmit('hello');
+        // this.onTermSubmit('');
         document.body.style.backgroundColor = "gray"
     }
     
